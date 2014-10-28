@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>		 <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>		   <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>		   <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Dosis:200,400' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/snap.css">
+		<!--<link rel="stylesheet" href="css/snap/demo.css">-->
+
+		<link rel="stylesheet" href="css/main.css">
+
+
+		<!--[if lt IE 9]>
+			<script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+		<![endif]-->
+	</head>
+	<body class="snapjs-left">
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+
+		<div class="main-container">
+		
+<!-- Left Menu -->		
+			<div class="snap-drawers">
+				<div class="snap-drawer snap-drawer-left">
+					<div>
+						<h3>MENU</h3>
+						<ul>
+							<li><a href="#">COTIZACIÓN DEL DÍA</a></li>
+							<li><a href="#">COTIZACIONES ANTERIORES<br><small>[próximamente]</small></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="snap-drawer snap-drawer-right"></div>
+			</div>
+			
+<!-- Content -->
+			<div class="main wrapper clearfix snap-content" id="content">
+
+				<article>
+					<header>
+					
+						<a href="#" id="open-left"></a>
+
+					</header>
+					<section>
+					
+						<p align="center">
+							<img src="img/logo-ch.png">
+						</p>	
+					
+						<div class="center" id="circle">
+						
+							<div class="cambio"></div>
+							<p>DOLAR BLUE</p>
+							
+						</div>
+
+						<div id="placeholder"></div>
+
+					</section>
+					<footer>
+						<div>
+								 
+							<div class="caja" id="ofic">
+								<div class="cambio">--</div>
+								<div class="tit">Dólar Oficial</div>
+							</div>
+
+							<div class="caja" id="tarj">
+								<div class="cambio">--</div>
+								<div class="tit">Dólar Tarjeta (Ofic + 35%)</div>
+							</div>
+								 
+							<div class="leyenda2"></div>
+								 
+						 </div>
+					</footer>
+				</article>
+
+			</div> <!-- #main -->
+		</div> <!-- #main-container -->
+
+		<div class="footer-container">
+
+
+		</div>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+		<script src="js/main.js"></script>
+		
+		<!-- Snap.js -->
+		
+		<script type="text/javascript" src="js/snap.js"></script>
+		<script type="text/javascript">
+			var snapper = new Snap({
+				element: document.getElementById('content')
+			});
+			
+		</script>
+		<script>
+			 
+			 var addEvent = function addEvent(element, eventName, func) {
+				if (element.addEventListener) {
+				   	return element.addEventListener(eventName, func, false);
+				   } else if (element.attachEvent) {
+						return element.attachEvent("on" + eventName, func);
+				   }
+			};
+			
+			addEvent(document.getElementById('open-left'), 'click', function(){
+				snapper.open('left');
+			});
+			 
+		</script>
+		
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+	</body>
+</html>
