@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.dblue.www"
+    versionCode = "11" 
+    version   = "1.0.0">
+
+<name>DBLUE</name>
+
+<description>
+Cotización del dolar oficial, dolar paralelo y dolar tarjeta.
+</description>
+
+<author href="http://www.pablovargas.com.ar" email="pvargas@bigbrand.com.ar">
+Pablo Vargas</author>
+
+<preference name="phonegap-version" value="3.6.3" />
+
+<gap:platform name="android" />
+
+<preference name="orientation" value="portrait" />
+<preference name="permissions" value="none"/>
+
+
+
+<!-- ICONS -->
+        
+    <icon src="icon.png" /> <!-- default 512 pixels -->
+        
+    <icon src="img/icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" /> <!-- 36 pixels -->
+    <icon src="img/icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" /> <!-- 48 pixels -->
+    <icon src="img/icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" /> <!-- 72 pixels -->
+    <icon src="img/icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" /> <!-- 96 pixels -->
+    <icon src="img/icons/android/xxhdpi.png" gap:platform="android" gap:density="xxhdpi" /> <!-- 144 pixels -->
+    <icon src="img/icons/android/xxxhdpi.png" gap:platform="android" gap:density="xxxhdpi" /> <!-- 192 pixels -->
+    
+    
+    
+<icon src="img/icons/android/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+<icon src="img/icons/android/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+<icon src="img/icons/android/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+<icon src="img/icons/android/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+<icon src="img/icons/android/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+<icon src="img/icons/android/fr-xxhdpi.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />    
+        
+        
+    <!-- SPLASH SCREENS -->
+        
+    <gap:splash src="splash.png" /> <!-- default 320x480 pixels -->
+    
+    
+<gap:splash src="img/splash/android/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+<gap:splash src="img/splash/android/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+<gap:splash src="img/splash/android/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+<gap:splash src="img/splash/android/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+<gap:splash src="fr-xhdpi.png" gap:platform="android" gap:qualifier="fr-xhdpi" />
+<gap:splash src="portrait-xxhdpi.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
+<gap:splash src="landscape-xxhdpi.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
+
+
+<gap:splash src="img/splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="img/splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="img/splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="img/splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+<gap:splash src="xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+
+    
+
+</widget>
+
